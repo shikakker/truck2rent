@@ -1,20 +1,30 @@
-Product Truck2rent logistic service - 
-Free service to search for transport and cargo without intermediaries.
-Place an order, choose a carrier, track cargo online.
+# Truck2rent Motion Assets
 
-https://truck2rent.ru/
+Product and motion-design assets for Truck2rent, a logistics service for matching cargo owners with carriers, placing transport orders, and tracking shipments.
 
-https://trucktorent.ru/
+## Repository contents
 
-<a href="https://apple.co/2YfNQ9Y" rel="nofollow noreferrer">Apple App</a>
+- Adobe After Effects animation sources.
+- JSON animation exports and HTML previews.
+- Splash-screen variants for multiple screen sizes and Apple devices.
+- Brand and supporting image assets.
 
-<a href="https://bit.ly/2LjMs0M" rel="nofollow noreferrer">Google App</a>
+## Preview locally
 
-​​​​​​​<a href="https://www.behance.net/gallery/89898609/Truck2rent-logistic-service" rel="nofollow noreferrer">more info</a>
+```bash
+python -m http.server 8000
+```
 
-Thanks for watching!
+Open `demo.html` or a nested animation preview.
 
-other projects:
-<a href="https://www.behance.net/shikakker" rel="nofollow noreferrer">Behance</a>
+## Project links
 
-<a href="https://whoisegor.ru" rel="nofollow noreferrer">Whoisegor.ru</a>
+- [Truck2rent website](https://truck2rent.ru/)
+- [Alternative product domain](https://trucktorent.ru/)
+- [iOS app](https://apple.co/2YfNQ9Y)
+- [Android app](https://bit.ly/2LjMs0M)
+- [Product case on Behance](https://www.behance.net/gallery/89898609/Truck2rent-logistic-service)
+
+## Status
+
+Archived product-design and motion package. It is not the complete production service source code.
