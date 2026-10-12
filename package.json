@@ -1,1 +1,7 @@
-{"name":"truck2rent-design-archive","private":true,"scripts":{"test":"node scripts/validate.mjs"}}
+{
+  "name": "truck2rent-design-archive",
+  "private": true,
+  "scripts": {
+    "test": "node scripts/validate.mjs && node --test scripts/cdn-integrity.test.mjs"
+  }
+}
