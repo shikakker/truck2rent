@@ -1,164 +1,80 @@
-# Truck2rent — Logistics Service Product Design Archive
+# Truck2rent — logistics product design & motion archive
 
-Historical product / UI / motion archive for **Truck2rent**, a logistics marketplace concept for matching cargo owners with transport providers without a traditional intermediary-heavy workflow.
+Historical product-design case for **Truck2rent**, a 2018–2019 logistics concept around cargo/transport discovery, carrier selection and shipment-oriented UX.
 
-The original product positioning was:
+> This repository proves product/UI/motion work. It does **not** contain the native iOS/Android application, production backend, database or realtime tracking implementation.
 
-```text
-Free service to search for transport and cargo without intermediaries.
-Place an order, choose a carrier, track cargo online.
-```
+## Live portfolio layer
 
-Historical links from the previous README:
+`index.html` is a new, dependency-light presentation layer around the preserved artifacts. It adds:
 
-```text
-https://truck2rent.ru/
-https://trucktorent.ru/
-https://www.behance.net/gallery/89898609/Truck2rent-logistic-service
-```
+- responsive case-study framing;
+- an interactive preview of the existing `data.json` animation;
+- play / pause / restart controls;
+- 0.5×, 1× and 2× playback speed;
+- reduced-motion-aware autoplay;
+- loading and failure states;
+- an opt-in sandboxed viewer for the generated historical `demo.html`;
+- explicit engineering boundaries so the archive is not misrepresented.
 
-Old iOS / Google Play short links were also listed. Treat all external links as archival until independently confirmed to still point to the intended product.
+The historical files remain the source of truth and are not rewritten.
 
-## What this repository contains
+## Preserved source material
 
-This checkout is primarily a **design / motion presentation archive**, not the source repository of the full logistics platform.
+- `T2R ANIMATION.aep` — After Effects authoring artifact.
+- `data.json` / `data.xml` — animation/export data.
+- `demo.html` — generated historical presentation.
+- `animation t2r/`, `animation 2/`, `animation 3/`, `splash 2/` — exported motion assets.
+- `images/` — visual assets.
 
-The root includes assets such as:
-
-```text
-T2R ANIMATION.aep
-animation t2r/
-animation 2/
-animation 3/
-splash 2/
-demo.html
-data.json
-data.xml
-images/
-```
-
-There is no Android Studio project, Xcode project, backend service, API server, database schema, or modern web application package in the current repository.
-
-## Product-design scope
-
-The broader Truck2rent product concept can be described around workflows such as:
+## Product scope represented by the archive
 
 ```text
 cargo owner creates order
-        |
-        v
+        ↓
 transport / carrier discovery
-        |
-        v
-select carrier / offer
-        |
-        v
-shipment / cargo tracking concept
+        ↓
+carrier / offer selection
+        ↓
+shipment / tracking-oriented experience
 ```
 
-The repository itself is strongest evidence of **product design, visual UI, and motion / launch assets** rather than transport-marketplace engineering.
+Historical product materials describe Truck2rent as a service for finding transport and cargo without intermediaries. Treat historical external URLs as archival until independently verified.
 
-## Motion design
+## Validation
 
-`T2R ANIMATION.aep` preserves an Adobe After Effects authoring file.
+Requires Node.js 22+ only for repository validation; the viewer itself is static HTML.
 
-The repository also includes several exported animation folders and a large static `demo.html` presentation.
-
-For a modern portfolio presentation, consider keeping:
-
-- the After Effects source where appropriate;
-- rendered MP4 / WebM / animated WebP previews;
-- selected frames;
-- a short explanation of each animation's role in onboarding, loading, tracking, or marketing.
-
-That is easier to review than large generated HTML / Lottie exports alone.
-
-## Data files
-
-The repository contains small historical files such as:
-
-```text
-data.json
-data.xml
+```bash
+npm test
 ```
 
-These appear to support presentation / animation assets rather than establish a live logistics API or production dataset.
+The validation checks that key historical artifacts still exist, `data.json` parses, and accessibility/safety markers remain in the portfolio viewer.
 
-Do not describe them as evidence of realtime transport data without a corresponding backend integration.
+GitHub Actions runs the same validation on pushes and pull requests.
 
-## Engineering boundary
+## Ten completed revival tasks
 
-The old README links to iOS / Android products, but this GitHub repository does not contain their native application source.
+1. Preserved the original After Effects and exported animation assets.
+2. Added a modern authored portfolio entry point.
+3. Added responsive desktop/mobile presentation.
+4. Connected the viewer to the preserved animation JSON.
+5. Added play/pause/restart interaction.
+6. Added playback-speed controls.
+7. Added reduced-motion behavior and explicit status feedback.
+8. Added an opt-in sandbox around the generated historical demo.
+9. Added automated archive integrity validation and CI.
+10. Reframed the documentation around verified product-design evidence and explicit engineering boundaries.
 
-For portfolio accuracy, separate:
+## Historical references
 
-**What the product did**
-- cargo / transport search;
-- carrier selection;
-- logistics-order concepts;
-- tracking-oriented UX.
+- Behance case: `https://www.behance.net/gallery/89898609/Truck2rent-logistic-service`
+- Portfolio family: `https://whoisegor.ru`
 
-from:
+## Portfolio positioning
 
-**What this repository proves**
-- product / UI design artifacts;
-- motion design;
-- exported presentation assets;
-- launch / store-oriented visual materials.
+Use this repository as evidence of **logistics product design, marketplace UX, mobile-product presentation and motion design**. Do not use it as evidence that the production transport marketplace or native applications were engineered here.
 
-Do not imply that the mobile or backend implementation was engineered in this repository unless source exists elsewhere.
+## License / rights
 
-## Logistics-product caveat
-
-A real transport marketplace requires operational infrastructure beyond the UI, including:
-
-- carrier identity / verification;
-- order ownership;
-- route / vehicle data;
-- availability;
-- pricing / quote logic;
-- contracts / documents;
-- shipment state;
-- tracking source;
-- notifications;
-- payments / disputes where relevant;
-- insurance / liability model;
-- fraud / abuse controls.
-
-The current repository should not be used to claim those systems were implemented here.
-
-## Historical links
-
-Behance profile:
-
-```text
-https://www.behance.net/shikakker
-```
-
-Personal-site family:
-
-```text
-https://whoisegor.ru
-```
-
-Verify public links before using them in a current CV or portfolio.
-
-## Current status
-
-**Historical logistics product-design / motion archive.** It preserves visual, animation, and presentation work for Truck2rent, but not the full mobile / backend application source.
-
-## Portfolio use
-
-This is useful as a case-study asset for:
-
-- logistics product design;
-- marketplace UX;
-- mobile product presentation;
-- motion / onboarding experiments;
-- launch / App Store visual work.
-
-It should be presented as design/product work rather than an engineering repository.
-
-## License
-
-No repository-wide code or media license is assumed by this README. Verify client, brand, photography, icon, font, animation, and third-party asset rights before redistribution.
+No repository-wide code or media license is assumed. Verify client, brand, photography, icon, font, animation and third-party asset rights before redistribution.
